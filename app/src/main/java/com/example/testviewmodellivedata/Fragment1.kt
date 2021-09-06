@@ -29,7 +29,7 @@ class Fragment1 : Fragment() {
 
         bt_count.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0: View?) {
-                viewModel.count.value = viewModel.count.value?.plus(1)
+                viewModel.count.value = ++viewModel.number
             }
 
         })

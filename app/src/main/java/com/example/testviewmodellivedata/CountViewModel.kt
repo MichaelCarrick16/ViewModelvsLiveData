@@ -4,8 +4,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class CountViewModel : ViewModel() {
-    var count : MutableLiveData<Int> = MutableLiveData()
-    init {
-        count.value = 0
+    var number = 0
+
+    val count : MutableLiveData<Int> by lazy {
+        MutableLiveData<Int>()
     }
+
 }
